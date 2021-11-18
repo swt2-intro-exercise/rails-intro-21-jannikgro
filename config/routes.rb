@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :author
 
+  post "author/new", to: "author#create"
+
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   
