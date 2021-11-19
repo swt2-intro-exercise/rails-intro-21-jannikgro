@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :author
+  resources :authors
 
   post "author/new", to: "author#create"
 
