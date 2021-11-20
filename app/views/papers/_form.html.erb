@@ -30,7 +30,7 @@
     <%= form.submit %>
   </div>
   <select multiple>
-    <% @authors.each do |author| %>
+    <% Author.all.each do |author| %>
         <option value=<%=author.id%>><%=author.name%></option>
     <% end %>
 </select>

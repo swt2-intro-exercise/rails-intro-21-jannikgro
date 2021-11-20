@@ -14,12 +14,10 @@ class PapersController < ApplicationController
   # GET /papers/new
   def new
     @paper = Paper.new
-    @authors = Author.all
   end
 
   # GET /papers/1/edit
   def edit
-    @authors = Author.all
   end
 
   # POST /papers
