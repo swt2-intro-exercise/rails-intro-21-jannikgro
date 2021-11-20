@@ -26,12 +26,8 @@
     <%= form.number_field :year %>
   </div>
 
+  <%= form.select 'author_ids', options_from_collection_for_select(Author.all, :id, :name, paper.author_ids), {}, multiple: true, size: 10 %>
   <div class="actions">
     <%= form.submit %>
   </div>
-  <select multiple>
-    <% Author.all.each do |author| %>
-        <option value=<%=author.id%>><%=author.name%></option>
-    <% end %>
-</select>
 <% end %>
