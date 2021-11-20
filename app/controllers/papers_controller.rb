@@ -18,6 +18,7 @@ class PapersController < ApplicationController
 
   # GET /papers/1/edit
   def edit
+    @authors = Author.all
   end
 
   # POST /papers
